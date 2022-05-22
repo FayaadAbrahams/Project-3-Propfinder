@@ -1,12 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: gray;
-    text-align: center;
-  }
-  h1 {
+    font-family: Arial, serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
     color: black;
-  }
-  p {
-    color: red;
-  }
 
+}
+.nav-links a {
+    color: black;
+}
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+    padding: 40px;
+}
+.menu li:hover {
+    background-color: lightgray;
+    border-radius: 40px;
+    transition: 0.4s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+.btn-select{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    text-align: center;
+    padding: 50px;
+    align-content: center;
+    margin: auto;
+   /* border: 1px solid lightgray;*/
+    border-radius: 5px;
+    width: 380px;
+    height: 230px;
+}
+h2{
+    text-align: center;
+
+}
+
+.btn {
+    background-color: dodgerblue;
+    padding: 6px 18px;
+    color: aliceblue;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.login{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    text-align: center;
+    padding: 20px;
+    align-content: center;
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 280px;
+    height: 300px;
+}
+.form-group{
+    padding: 8px;
+}
   
