@@ -70,7 +70,7 @@ h2{
 
 .btn {
     background-color: dodgerblue;
-    padding: 6px 18px;
+    padding: 6px 16px;
     color: aliceblue;
     text-align: center;
     border: none;
@@ -93,7 +93,6 @@ h2{
     background-color: royalblue;
 }
 
-
 .btn:hover{
     background-color: royalblue;
 }
@@ -109,13 +108,13 @@ h2{
     align-content: center;
     border: 1px solid lightgray;
     border-radius: 20px;
-    width: 480px;
-    height: 400px;
+    width: 450px;
+    height: 360px;
 }
 .login p{
     font-weight: bold;
     font-size: 14px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
  }
 
 .form-group{
@@ -123,7 +122,9 @@ h2{
 }
 .input{
     height: 30px;
+    width: 100%;
     border-radius: 5px;
+    padding-top: 10px;
 }
 
 .register-form-student{
@@ -136,8 +137,24 @@ h2{
     margin: auto;
     border: 1px solid lightgray;
     border-radius: 20px;
-    width: 630px;
-    height: 680px;
+    width: 470px;
+    height: 640px;
+
+}
+
+.register-form-property{
+    position: center;
+    top: 20%;
+    left: 40%;
+    text-align: left;
+    padding: 30px;
+    align-content: center;
+    margin: auto;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 470px;
+    height: 540px;
+
 }
 .register-form p{
    padding-bottom: 10px;

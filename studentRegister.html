@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="house-favicon.png">
-    <link rel="stylesheet" href="css/loginStyles.css">
-  <title>Student Account Registration </title>
+    <link rel="stylesheet" href="css/register.css">
+    <title>Student Account Registration </title>
 </head>
 <body>
 <!-- NAVIGATION MENUS -->
@@ -27,56 +27,56 @@
         <div class="form-group">
             <p>First Name</p>
             <label>
-                <input type="text" class="input"  size="60"/>
+                <input type="text" class="input" size="60" name="txtFirstName"/>
             </label>
         </div>
 
         <div class="form-group">
             <p>Last Name</p>
             <label>
-                <input type="text" class="input"  size="60"/>
+                <input type="text" class="input" size="60" name="txtLastName"/>
             </label>
         </div>
 
         <div class="form-group">
             <div class="radio">
-            <p>Gender</p>
-            <label>
-                <input type="radio" id="male" name="radAnswer"/>
-                <label for="male">Male</label>
-                <input type="radio" id="female"  name="radAnswer"/>
-                <label for="female">Female</label>
-                <input type="radio" id="other"  name="radAnswer"/>
-                <label for="other">Other</label>
-            </label>
+                <p>Gender</p>
+                <label>
+                    <input type="radio" id="male" name="radAnswer"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="radAnswer"/>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="radAnswer"/>
+                    <label for="other">Other</label>
+                </label>
             </div>
         </div>
 
         <div class="form-group">
             <p>Email</p>
             <label>
-                <input type="text" class="input"  size="60"/>
+                <input type="text" class="input" size="60" name="txtEmail"/>
             </label>
         </div>
 
         <div class="form-group">
             <p>University</p>
             <label>
-                <input type="text" class="input"  size="60"/>
+                <input type="text" class="input" size="60" name="txtUni"/>
             </label>
         </div>
 
         <div class="form-group">
             <p>Address</p>
             <label>
-                <input type="text" class="input"  size="60"/>
+                <input type="text" class="input" size="60" name="txtAddress"/>
             </label>
         </div>
 
         <div class="form-group">
             <p>Cellphone number</p>
             <label>
-                <input type="text" class="input"  size="60"/>
+                <input type="text" class="input" size="60" name="txtCell"/>
             </label>
         </div>
 
@@ -85,9 +85,15 @@
             <input type="date" id="birthday" name="birthday">
         </div>
 
-        <button class="btn">Submit</button>
+        <button class="btn-submit-login" onclick="ID" name="txtId">Submit</button>
 
     </form>
 </div>
 </body>
 </html>
+
+<script>
+    var ID = function () {
+        return '_' + Math.random().toString(36).substring(2, 9);
+    }
+</script>
