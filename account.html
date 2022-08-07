@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="icon" href="house-favicon.png">
-        <link rel="stylesheet" href="css/register.css">
-        <title>Account</title>
-    </head>
-<body>
+<head>
+    <link rel="icon" href="house-favicon.png">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Account</title>
+</head>
+
 <!-- NAVIGATION MENUS -->
-<nav class="navbar">
-    <div class="logo"><a href="home.html">PropFinder</a></div>
-    <ul class="nav-links">
-        <div class="menu">
-            <li><a href="/">Browse</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact Us</a></li>
-            <li><a href="account.html">Account</a></li>
-        </div>
-    </ul>
-</nav>
-</body>
-    <div class="login">
+<body class="navbar">
+<div class="logo"><a href="home.html">PropFinder</a></div>
+<ul class="nav-links">
+    <div class="menu">
+        <li><a href="/">Browse</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact Us</a></li>
+        <li><a href="account.html">Account</a></li>
+    </div>
+</ul>
+
+<div class="login">
     <form>
-    <h2> Login </h2>
+        <h1> Login to your Account </h1>
         <br>
         <div class="form-group">
-            <p>User Name</p>
             <label>
-                <input type="text" class="input"  size="50"/>
+                <input type="text" class="input" size="50" placeholder="Email"/>
             </label>
         </div>
         <div class="form-group">
-            <p>Password</p>
-            <label >
-                <input type="text" class="input" size="50"/>
+            <label>
+                <input type="text" class="input" size="50" placeholder="Password"/>
             </label>
         </div>
         <br style="line-height: 2">
         <form action="home.html">
-        <button class="btn-submit-login"  onclick="document.location='home.html'">Submit</button>
+            <button class="btn-submit-login" onclick="document.location='home.html'">Submit</button>
         </form>
         <div class="form-group">
             <br style="line-height: 1">
-            <p>Don't have an account?<a href="accountTypeSelect.html"> Click here.</a> </p>
+            <p>Don't have an account?<a href="accountTypeSelect.html"> Click here.</a></p>
         </div>
     </form>
+</div>
+</body>
+<!--Footer-->
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About Us</h2>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <a href="#">Jobs</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social Media</h2>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <label for="footer-email"></label><input type="text" id="footer-email"
+                                                     placeholder="Enter your email address">
+            <input type="submit" id="footer-email-btn" value="Sign Up">
+        </div>
     </div>
+</div>
+<!--Footer End-->
 </html>
