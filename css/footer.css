@@ -5,12 +5,12 @@
 }
 
 .footer-container {
-    position: absolute;
+    margin-top: 100px;
+    position: relative;
     width: 100%;
-    bottom: 0;
     background-color: #212123;
-    padding: 4rem 0 2rem 0;
-
+    padding: 3rem 0 2rem 0;
+    display: inline-block;
 }
 
 .footer {
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2rem auto;
+    margin-top: auto;
 }
 
 .footer-heading {
