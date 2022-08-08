@@ -27,12 +27,12 @@
         <form action="studentRegister.php" method="post">
             <div class="form-group">
                 <label>
-                    <input type="text" class="input" size="60" name="txtFirstName" placeholder="Name"/>
+                    <input type="text" class="input" size="60" name="txtName" placeholder="Name"/>
                 </label>
             </div>
             <div class="form-group">
                 <label>
-                    <input type="password" class="input" size="60" name="txtLastName" placeholder="Password"/>
+                    <input type="password" class="input" size="60" name="txtPassword" placeholder="Password"/>
                 </label>
             </div>
             <div class="form-group">
@@ -65,12 +65,12 @@
             </div>
             <div class="form-group">
                 <label>
-                    <input type="text" class="input" size="60" name="txtCell" placeholder="Cell Number"/>
+                    <input type="text" class="input" size="60" name="txtCell" placeholder="Cell Number" maxlength="10"/>
                 </label>
             </div>
             <div class="form-group">
                 <label for="birthday">Date of birth: (example: 13/03/1999)</label>
-                <input type="text" class="input" id="birthday" name="birthday" placeholder="Date of Birth">
+                <input type="text" class="input" id="birthday" name="birthday" placeholder="Date of Birth" maxlength="10">
             </div>
             <button class="btn-submit-login" onclick="ID()" name="txtId">Submit</button>
 
