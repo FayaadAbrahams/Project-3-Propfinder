@@ -20,22 +20,22 @@
 </nav>
 
     <div class="login">
-    <form>
+    <form action="login.php" method="post">
         <h1> Login to your Account </h1>
         <br>
         <div class="form-group">
             <label>
-                <input type="text" class="input" size="50" placeholder="Email"/>
+                <input type="email" class="input" size="50" placeholder="Email" name="email" required />
             </label>
         </div>
         <div class="form-group">
             <label>
-                <input type="text" class="input" size="50" placeholder="Password"/>
+                <input type="password" class="input" size="50" placeholder="Password" name="password" required/>
             </label>
         </div>
         <br style="line-height: 2">
         <form action="home.html">
-            <button class="btn-submit-login" onclick="document.location='home.html'">Submit</button>
+            <button class="btn-submit-login" name="login-submit" >Submit</button>
         </form>
         <div class="form-group">
             <br style="line-height: 1">
