@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/loginStyles.css">
-  <title>Student Account Registration </title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="house-favicon.png">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Student Account Registration </title>
 </head>
-<body>
 <!-- NAVIGATION MENUS -->
 <nav class="navbar">
     <div class="logo"><a href="home.html">PropFinder</a></div>
@@ -20,73 +21,98 @@
         </div>
     </ul>
 </nav>
-<div class="register-form-student">
-    <h1>Student Sign up</h1>
-    <form>
-        <div class="form-group">
-            <p>First Name</p>
-            <label>
-                <input type="text" class="input"  size="60"/>
-            </label>
-        </div>
+<div class="flex-wrapper">
+    <div class="register-form-student">
+        <h1>Student Sign up</h1>
+        <form action="studentRegister.php" method="post">
+            <div class="form-group">
+                <label>
+                    <input type="text" class="input" size="60" name="txtName" placeholder="Name" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="password" class="input" size="60" name="txtPassword" placeholder="Password" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="radio">
+                    <p>Gender</p>
+                    <label>
+                        <input type="radio" id="male" name="radAnswer" value="m"/>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="radAnswer" value="f"/>
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="radAnswer" value="o"/>
+                        <label for="other">Other</label>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="email" class="input" size="60" name="txtEmail" placeholder="Email" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="text" class="input" size="60" name="txtUni" placeholder="University" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="text" class="input" size="60" name="txtAddress" placeholder="Address" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="text" class="input" size="60" name="txtCell" placeholder="Cell Number" maxlength="10" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Date of birth: (example: 13/03/1999)</label>
+                <input type="text" class="input" id="birthday" name="birthday" placeholder="Date of Birth" maxlength="10" required>
+            </div>
+            <button class="btn-submit-login"  name="txtId">Submit</button>
 
-        <div class="form-group">
-            <p>Last Name</p>
-            <label>
-                <input type="text" class="input"  size="60"/>
-            </label>
-        </div>
-
-        <div class="form-group">
-            <div class="radio">
-            <p>Gender</p>
-            <label>
-                <input type="radio" id="male" name="radAnswer"/>
-                <label for="male">Male</label>
-                <input type="radio" id="female"  name="radAnswer"/>
-                <label for="female">Female</label>
-                <input type="radio" id="other"  name="radAnswer"/>
-                <label for="other">Other</label>
-            </label>
+        </form>
+    </div>
+    <!--Footer-->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="#">Sponsorships</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <label for="footer-email"></label><input type="text" id="footer-email" placeholder="Enter your email address">
+                <input type="submit" id="footer-email-btn" value="Sign Up">
             </div>
         </div>
-
-        <div class="form-group">
-            <p>Email</p>
-            <label>
-                <input type="text" class="input"  size="60"/>
-            </label>
-        </div>
-
-        <div class="form-group">
-            <p>University</p>
-            <label>
-                <input type="text" class="input"  size="60"/>
-            </label>
-        </div>
-
-        <div class="form-group">
-            <p>Address</p>
-            <label>
-                <input type="text" class="input"  size="60"/>
-            </label>
-        </div>
-
-        <div class="form-group">
-            <p>Cellphone number</p>
-            <label>
-                <input type="text" class="input"  size="60"/>
-            </label>
-        </div>
-
-        <div class="form-group">
-            <label for="birthday">Date of birth:</label>
-            <input type="date" id="birthday" name="birthday">
-        </div>
-
-        <button class="btn">Submit</button>
-
-    </form>
+    </div>
 </div>
-</body>
+<!--Footer End-->
 </html>
+<script>
+    function ID() {
+        return /*'_'*/ +Math.random().toString(36).substring(2, 9);
+    }
+</script>
