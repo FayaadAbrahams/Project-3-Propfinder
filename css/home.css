@@ -14,7 +14,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    margin: 10px;
     background-color: white;
     color: black;
 	margin-top: -40px;
@@ -138,7 +138,7 @@ h2
 
 .slides img
 {
-	width: 50%
+	width: 50%;
 	height: auto;
 	border-radius: 13px;
 }
@@ -166,10 +166,17 @@ h2
 
 
 
-
-
-
-
+.btn{
+    background-image: linear-gradient(to left, #1ca7da 0%, #0b5c8d 100%);
+    padding: 7px 30px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;transition: 0.5s;
+  }
 
 
 

@@ -1,0 +1,73 @@
+/* body{
+  margin-top: 20px;
+} */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+
+}
+.nav-links a {
+  color: black;
+}
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 2em;
+  font-size: 18px;
+  /* padding: 40px; */
+}
+.menu li:hover {
+  background-color: lightgray;
+  border-radius: 40px;
+  transition: 0.4s ease;
+}
+.menu li {
+  padding: 5px 14px;
+}
+
+.row{
+  margin: 10px;
+  position: relative;
+  display: flex;
+}
+
+.col-md-3{
+  margin-right: 70px;
+}
+
+#column{
+  margin-left: 30px;
+}
+
+.buttons{
+  display: flex;
+}
+
+.btn{
+  background-image: linear-gradient(to left, #1ca7da 0%, #0b5c8d 100%);
+  padding: 7px 30px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;transition: 0.5s;
+}
+
+.accountinfo {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
