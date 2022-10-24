@@ -6,7 +6,7 @@
     <members>
         <member name="M:Microsoft.AspNet.Identity.IIdentityMessageServiceExtensions.Send(Microsoft.AspNet.Identity.IIdentityMessageService,Microsoft.AspNet.Identity.IdentityMessage)">
             <summary>
-            Sync method to send the IdentityMessage
+                Sync method to send the IdentityMessage
             </summary>
             <param name="service"></param>
             <param name="message"></param>
@@ -69,7 +69,7 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.IUserTokenProvider`2.NotifyAsync(System.String,Microsoft.AspNet.Identity.UserManager{`0,`1},`0)">
             <summary>
-                Notifies the user that a token has been generated, for example an email or sms could be sent, or 
+                Notifies the user that a token has been generated, for example an email or sms could be sent, or
                 this can be a no-op
             </summary>
             <param name="token"></param>
@@ -172,14 +172,16 @@
         </member>
         <member name="T:Microsoft.AspNet.Identity.IUserLockoutStore`2">
             <summary>
-                Stores information which can be used to implement account lockout, including access failures and lockout status
+                Stores information which can be used to implement account lockout, including access failures and lockout
+                status
             </summary>
             <typeparam name="TUser"></typeparam>
             <typeparam name="TKey"></typeparam>
         </member>
         <member name="M:Microsoft.AspNet.Identity.IUserLockoutStore`2.GetLockoutEndDateAsync(`0)">
             <summary>
-                Returns the DateTimeOffset that represents the end of a user's lockout, any time in the past should be considered
+                Returns the DateTimeOffset that represents the end of a user's lockout, any time in the past should be
+                considered
                 not locked out.
             </summary>
             <param name="user"></param>
@@ -209,7 +211,8 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.IUserLockoutStore`2.GetAccessFailedCountAsync(`0)">
             <summary>
-                Returns the current number of failed access attempts.  This number usually will be reset whenever the password is
+                Returns the current number of failed access attempts. This number usually will be reset whenever the
+                password is
                 verified or the account is locked out.
             </summary>
             <param name="user"></param>
@@ -729,13 +732,15 @@
         </member>
         <member name="T:Microsoft.AspNet.Identity.PhoneNumberTokenProvider`1">
             <summary>
-                TokenProvider that generates tokens from the user's security stamp and notifies a user via their phone number
+                TokenProvider that generates tokens from the user's security stamp and notifies a user via their phone
+                number
             </summary>
             <typeparam name="TUser"></typeparam>
         </member>
         <member name="T:Microsoft.AspNet.Identity.PhoneNumberTokenProvider`2">
             <summary>
-                TokenProvider that generates tokens from the user's security stamp and notifies a user via their phone number
+                TokenProvider that generates tokens from the user's security stamp and notifies a user via their phone
+                number
             </summary>
             <typeparam name="TUser"></typeparam>
             <typeparam name="TKey"></typeparam>
@@ -826,7 +831,9 @@
             <summary>
                 Constructor
             </summary>
-            <param name="store">The IRoleStore is responsible for commiting changes via the UpdateAsync/CreateAsync methods</param>
+            <param name="store">The IRoleStore is responsible for commiting changes via the UpdateAsync/CreateAsync
+                methods
+            </param>
         </member>
         <member name="M:Microsoft.AspNet.Identity.RoleManager`2.Dispose">
             <summary>
@@ -1767,193 +1774,193 @@
         </member>
         <member name="T:Microsoft.AspNet.Identity.Resources">
             <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
+                A strongly-typed resource class, for looking up localized strings, etc.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.ResourceManager">
             <summary>
-              Returns the cached ResourceManager instance used by this class.
+                Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.Culture">
             <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
+                Overrides the current thread's CurrentUICulture property for all
+                resource lookups using this strongly typed resource class.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.DefaultError">
             <summary>
-              Looks up a localized string similar to An unknown failure has occured..
+                Looks up a localized string similar to An unknown failure has occured..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.DuplicateEmail">
             <summary>
-              Looks up a localized string similar to Email &apos;{0}&apos; is already taken..
+                Looks up a localized string similar to Email &apos;{0}&apos; is already taken..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.DuplicateName">
             <summary>
-              Looks up a localized string similar to Name {0} is already taken..
+                Looks up a localized string similar to Name {0} is already taken..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.ExternalLoginExists">
             <summary>
-              Looks up a localized string similar to A user with that external login already exists..
+                Looks up a localized string similar to A user with that external login already exists..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.InvalidEmail">
             <summary>
-              Looks up a localized string similar to Email &apos;{0}&apos; is invalid..
+                Looks up a localized string similar to Email &apos;{0}&apos; is invalid..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.InvalidToken">
             <summary>
-              Looks up a localized string similar to Invalid token..
+                Looks up a localized string similar to Invalid token..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.InvalidUserName">
             <summary>
-              Looks up a localized string similar to User name {0} is invalid, can only contain letters or digits..
+                Looks up a localized string similar to User name {0} is invalid, can only contain letters or digits..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.LockoutNotEnabled">
             <summary>
-              Looks up a localized string similar to Lockout is not enabled for this user..
+                Looks up a localized string similar to Lockout is not enabled for this user..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.NoTokenProvider">
             <summary>
-              Looks up a localized string similar to No IUserTokenProvider is registered..
+                Looks up a localized string similar to No IUserTokenProvider is registered..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.NoTwoFactorProvider">
             <summary>
-              Looks up a localized string similar to No IUserTwoFactorProvider for &apos;{0}&apos; is registered..
+                Looks up a localized string similar to No IUserTwoFactorProvider for &apos;{0}&apos; is registered..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.PasswordMismatch">
             <summary>
-              Looks up a localized string similar to Incorrect password..
+                Looks up a localized string similar to Incorrect password..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.PasswordRequireDigit">
             <summary>
-              Looks up a localized string similar to Passwords must have at least one digit (&apos;0&apos;-&apos;9&apos;)..
+                Looks up a localized string similar to Passwords must have at least one digit (&apos;0&apos;-&apos;9&apos;)..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.PasswordRequireLower">
             <summary>
-              Looks up a localized string similar to Passwords must have at least one lowercase (&apos;a&apos;-&apos;z&apos;)..
+                Looks up a localized string similar to Passwords must have at least one lowercase (&apos;a&apos;-&apos;z&apos;)..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.PasswordRequireNonLetterOrDigit">
             <summary>
-              Looks up a localized string similar to Passwords must have at least one non letter or digit character..
+                Looks up a localized string similar to Passwords must have at least one non letter or digit character..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.PasswordRequireUpper">
             <summary>
-              Looks up a localized string similar to Passwords must have at least one uppercase (&apos;A&apos;-&apos;Z&apos;)..
+                Looks up a localized string similar to Passwords must have at least one uppercase (&apos;A&apos;-&apos;Z&apos;)..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.PasswordTooShort">
             <summary>
-              Looks up a localized string similar to Passwords must be at least {0} characters..
+                Looks up a localized string similar to Passwords must be at least {0} characters..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.PropertyTooShort">
             <summary>
-              Looks up a localized string similar to {0} cannot be null or empty..
+                Looks up a localized string similar to {0} cannot be null or empty..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.RoleNotFound">
             <summary>
-              Looks up a localized string similar to Role {0} does not exist..
+                Looks up a localized string similar to Role {0} does not exist..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIQueryableRoleStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IQueryableRoleStore&lt;TRole&gt;..
+                Looks up a localized string similar to Store does not implement IQueryableRoleStore&lt;TRole&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIQueryableUserStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IQueryableUserStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IQueryableUserStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserClaimStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserClaimStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserClaimStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserConfirmationStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserConfirmationStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserConfirmationStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserEmailStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserEmailStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserEmailStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserLockoutStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserLockoutStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserLockoutStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserLoginStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserLoginStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserLoginStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserPasswordStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserPasswordStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserPasswordStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserPhoneNumberStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserPhoneNumberStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserPhoneNumberStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserRoleStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserRoleStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserRoleStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserSecurityStampStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserSecurityStampStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserSecurityStampStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.StoreNotIUserTwoFactorStore">
             <summary>
-              Looks up a localized string similar to Store does not implement IUserTwoFactorStore&lt;TUser&gt;..
+                Looks up a localized string similar to Store does not implement IUserTwoFactorStore&lt;TUser&gt;..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.UserAlreadyHasPassword">
             <summary>
-              Looks up a localized string similar to User already has a password set..
+                Looks up a localized string similar to User already has a password set..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.UserAlreadyInRole">
             <summary>
-              Looks up a localized string similar to User already in role..
+                Looks up a localized string similar to User already in role..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.UserIdNotFound">
             <summary>
-              Looks up a localized string similar to UserId not found..
+                Looks up a localized string similar to UserId not found..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.UserNameNotFound">
             <summary>
-              Looks up a localized string similar to User {0} does not exist..
+                Looks up a localized string similar to User {0} does not exist..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.UserNotInRole">
             <summary>
-              Looks up a localized string similar to User is not in role..
+                Looks up a localized string similar to User is not in role..
             </summary>
         </member>
         <member name="T:Microsoft.AspNet.Identity.IdentityResult">
@@ -1975,7 +1982,7 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.IdentityResult.#ctor(System.Boolean)">
             <summary>
-            Constructor that takes whether the result is successful
+                Constructor that takes whether the result is successful
             </summary>
             <param name="success"></param>
         </member>
@@ -2083,7 +2090,9 @@
             <summary>
                 Constructor
             </summary>
-            <param name="store">The IUserStore is responsible for commiting changes via the UpdateAsync/CreateAsync methods</param>
+            <param name="store">The IUserStore is responsible for commiting changes via the UpdateAsync/CreateAsync
+                methods
+            </param>
         </member>
         <member name="M:Microsoft.AspNet.Identity.UserManager`2.Dispose">
             <summary>
@@ -2190,7 +2199,8 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.UserManager`2.VerifyPasswordAsync(Microsoft.AspNet.Identity.IUserPasswordStore{`0,`1},`0,System.String)">
             <summary>
-                By default, retrieves the hashed password from the user store and calls PasswordHasher.VerifyHashPassword
+                By default, retrieves the hashed password from the user store and calls
+                PasswordHasher.VerifyHashPassword
             </summary>
             <param name="store"></param>
             <param name="user"></param>
@@ -2289,7 +2299,7 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.UserManager`2.AddToRolesAsync(`1,System.String[])">
             <summary>
-            Method to add user to multiple roles
+                Method to add user to multiple roles
             </summary>
             <param name="userId">user id</param>
             <param name="roles">list of role names</param>
@@ -2297,7 +2307,7 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.UserManager`2.RemoveFromRolesAsync(`1,System.String[])">
             <summary>
-            Remove user from multiple roles
+                Remove user from multiple roles
             </summary>
             <param name="userId">user id</param>
             <param name="roles">list of role names</param>
@@ -2546,9 +2556,11 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.UserManager`2.AccessFailedAsync(`1)">
             <summary>
-            Increments the access failed count for the user and if the failed access account is greater than or equal
-            to the MaxFailedAccessAttempsBeforeLockout, the user will be locked out for the next DefaultAccountLockoutTimeSpan
-            and the AccessFailedCount will be reset to 0. This is used for locking out the user account.
+                Increments the access failed count for the user and if the failed access account is greater than or
+                equal
+                to the MaxFailedAccessAttempsBeforeLockout, the user will be locked out for the next
+                DefaultAccountLockoutTimeSpan
+                and the AccessFailedCount will be reset to 0. This is used for locking out the user account.
             </summary>
             <param name="userId"></param>
             <returns></returns>
@@ -2625,7 +2637,8 @@
         </member>
         <member name="P:Microsoft.AspNet.Identity.UserManager`2.DefaultAccountLockoutTimeSpan">
             <summary>
-                Default amount of time that a user is locked out for after MaxFailedAccessAttemptsBeforeLockout is reached
+                Default amount of time that a user is locked out for after MaxFailedAccessAttemptsBeforeLockout is
+                reached
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.UserManager`2.SupportsUserTwoFactor">
@@ -2685,7 +2698,7 @@
         </member>
         <member name="P:Microsoft.AspNet.Identity.UserManager`2.TwoFactorProviders">
             <summary>
-            Maps the registered two-factor authentication providers for users by their id
+                Maps the registered two-factor authentication providers for users by their id
             </summary>
         </member>
         <member name="M:Microsoft.AspNet.Identity.UserManager`1.#ctor(Microsoft.AspNet.Identity.IUserStore{`0})">

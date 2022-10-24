@@ -63,7 +63,7 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.RoleStore`3.Dispose(System.Boolean)">
             <summary>
-                If disposing, calls dispose on the Context.  Always nulls out the Context
+                If disposing, calls dispose on the Context. Always nulls out the Context
             </summary>
             <param name="disposing"></param>
         </member>
@@ -95,14 +95,16 @@
         </member>
         <member name="T:Microsoft.AspNet.Identity.EntityFramework.UserStore`1">
             <summary>
-                EntityFramework based user store implementation that supports IUserStore, IUserLoginStore, IUserClaimStore and
+                EntityFramework based user store implementation that supports IUserStore, IUserLoginStore,
+                IUserClaimStore and
                 IUserRoleStore
             </summary>
             <typeparam name="TUser"></typeparam>
         </member>
         <member name="T:Microsoft.AspNet.Identity.EntityFramework.UserStore`6">
             <summary>
-                EntityFramework based user store implementation that supports IUserStore, IUserLoginStore, IUserClaimStore and
+                EntityFramework based user store implementation that supports IUserStore, IUserLoginStore,
+                IUserClaimStore and
                 IUserRoleStore
             </summary>
             <typeparam name="TUser"></typeparam>
@@ -180,7 +182,8 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.UserStore`6.GetLockoutEndDateAsync(`0)">
             <summary>
-                Returns the DateTimeOffset that represents the end of a user's lockout, any time in the past should be considered
+                Returns the DateTimeOffset that represents the end of a user's lockout, any time in the past should be
+                considered
                 not locked out.
             </summary>
             <param name="user"></param>
@@ -210,7 +213,8 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.UserStore`6.GetAccessFailedCountAsync(`0)">
             <summary>
-                Returns the current number of failed access attempts.  This number usually will be reset whenever the password is
+                Returns the current number of failed access attempts. This number usually will be reset whenever the
+                password is
                 verified or the account is locked out.
             </summary>
             <param name="user"></param>
@@ -412,14 +416,14 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.UserStore`6.GetUserAggregateAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
             <summary>
-            Used to attach child entities to the User aggregate, i.e. Roles, Logins, and Claims
+                Used to attach child entities to the User aggregate, i.e. Roles, Logins, and Claims
             </summary>
             <param name="filter"></param>
             <returns></returns>
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.UserStore`6.Dispose(System.Boolean)">
             <summary>
-                If disposing, calls dispose on the Context.  Always nulls out the Context
+                If disposing, calls dispose on the Context. Always nulls out the Context
             </summary>
             <param name="disposing"></param>
         </member>
@@ -529,13 +533,15 @@
         </member>
         <member name="T:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext">
             <summary>
-            Default IdentityDbContext that uses the default entity types for ASP.NET Identity Users, Roles, Claims, Logins. 
-            Use this overload to add your own entity types.
+                Default IdentityDbContext that uses the default entity types for ASP.NET Identity Users, Roles, Claims,
+                Logins.
+                Use this overload to add your own entity types.
             </summary>
         </member>
         <member name="T:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext`6">
             <summary>
-            Generic IdentityDbContext base that can be customized with entity types that extend from the base IdentityUserXXX types.
+                Generic IdentityDbContext base that can be customized with entity types that extend from the base
+                IdentityUserXXX types.
             </summary>
             <typeparam name="TUser"></typeparam>
             <typeparam name="TRole"></typeparam>
@@ -557,15 +563,18 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext`6.#ctor(System.Data.Common.DbConnection,System.Data.Entity.Infrastructure.DbCompiledModel,System.Boolean)">
             <summary>
-                Constructs a new context instance using the existing connection to connect to a database, and initializes it from
-                the given model.  The connection will not be disposed when the context is disposed if contextOwnsConnection is
+                Constructs a new context instance using the existing connection to connect to a database, and
+                initializes it from
+                the given model. The connection will not be disposed when the context is disposed if
+                contextOwnsConnection is
                 false.
             </summary>
             <param name="existingConnection">An existing connection to use for the new context.</param>
             <param name="model">The model that will back this context.</param>
             <param name="contextOwnsConnection">
                 Constructs a new context instance using the existing connection to connect to a
-                database, and initializes it from the given model.  The connection will not be disposed when the context is
+                database, and initializes it from the given model. The connection will not be disposed when the context
+                is
                 disposed if contextOwnsConnection is false.
             </param>
         </member>
@@ -573,8 +582,8 @@
             <summary>
                 Constructs a new context instance using conventions to create the name of
                 the database to which a connection will be made, and initializes it from
-                the given model.  The by-convention name is the full name (namespace + class
-                name) of the derived context class.  See the class remarks for how this is
+                the given model. The by-convention name is the full name (namespace + class
+                name) of the derived context class. See the class remarks for how this is
                 used to create a connection.
             </summary>
             <param name="model">The model that will back this context.</param>
@@ -582,11 +591,12 @@
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext`6.#ctor(System.Data.Common.DbConnection,System.Boolean)">
             <summary>
                 Constructs a new context instance using the existing connection to connect
-                to a database.  The connection will not be disposed when the context is disposed
+                to a database. The connection will not be disposed when the context is disposed
                 if contextOwnsConnection is false.
             </summary>
             <param name="existingConnection">An existing connection to use for the new context.</param>
-            <param name="contextOwnsConnection">If set to true the connection is disposed when the context is disposed, otherwise
+            <param name="contextOwnsConnection">If set to true the connection is disposed when the context is disposed,
+                otherwise
                 the caller must dispose the connection.
             </param>
         </member>
@@ -594,7 +604,7 @@
             <summary>
                 Constructs a new context instance using the given string as the name or connection
                 string for the database to which a connection will be made, and initializes
-                it from the given model.  See the class remarks for how this is used to create
+                it from the given model. See the class remarks for how this is used to create
                 a connection.
             </summary>
             <param name="nameOrConnectionString">Either the database name or a connection string.</param>
@@ -642,15 +652,18 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext.#ctor(System.Data.Common.DbConnection,System.Data.Entity.Infrastructure.DbCompiledModel,System.Boolean)">
             <summary>
-                Constructs a new context instance using the existing connection to connect to a database, and initializes it from
-                the given model.  The connection will not be disposed when the context is disposed if contextOwnsConnection is
+                Constructs a new context instance using the existing connection to connect to a database, and
+                initializes it from
+                the given model. The connection will not be disposed when the context is disposed if
+                contextOwnsConnection is
                 false.
             </summary>
             <param name="existingConnection">An existing connection to use for the new context.</param>
             <param name="model">The model that will back this context.</param>
             <param name="contextOwnsConnection">
                 Constructs a new context instance using the existing connection to connect to a
-                database, and initializes it from the given model.  The connection will not be disposed when the context is
+                database, and initializes it from the given model. The connection will not be disposed when the context
+                is
                 disposed if contextOwnsConnection is false.
             </param>
         </member>
@@ -658,8 +671,8 @@
             <summary>
                 Constructs a new context instance using conventions to create the name of
                 the database to which a connection will be made, and initializes it from
-                the given model.  The by-convention name is the full name (namespace + class
-                name) of the derived context class.  See the class remarks for how this is
+                the given model. The by-convention name is the full name (namespace + class
+                name) of the derived context class. See the class remarks for how this is
                 used to create a connection.
             </summary>
             <param name="model">The model that will back this context.</param>
@@ -667,11 +680,12 @@
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext.#ctor(System.Data.Common.DbConnection,System.Boolean)">
             <summary>
                 Constructs a new context instance using the existing connection to connect
-                to a database.  The connection will not be disposed when the context is disposed
+                to a database. The connection will not be disposed when the context is disposed
                 if contextOwnsConnection is false.
             </summary>
             <param name="existingConnection">An existing connection to use for the new context.</param>
-            <param name="contextOwnsConnection">If set to true the connection is disposed when the context is disposed, otherwise
+            <param name="contextOwnsConnection">If set to true the connection is disposed when the context is disposed,
+                otherwise
                 the caller must dispose the connection.
             </param>
         </member>
@@ -679,7 +693,7 @@
             <summary>
                 Constructs a new context instance using the given string as the name or connection
                 string for the database to which a connection will be made, and initializes
-                it from the given model.  See the class remarks for how this is used to create
+                it from the given model. See the class remarks for how this is used to create
                 a connection.
             </summary>
             <param name="nameOrConnectionString">Either the database name or a connection string.</param>
@@ -711,15 +725,18 @@
         </member>
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext`1.#ctor(System.Data.Common.DbConnection,System.Data.Entity.Infrastructure.DbCompiledModel,System.Boolean)">
             <summary>
-                Constructs a new context instance using the existing connection to connect to a database, and initializes it from
-                the given model.  The connection will not be disposed when the context is disposed if contextOwnsConnection is
+                Constructs a new context instance using the existing connection to connect to a database, and
+                initializes it from
+                the given model. The connection will not be disposed when the context is disposed if
+                contextOwnsConnection is
                 false.
             </summary>
             <param name="existingConnection">An existing connection to use for the new context.</param>
             <param name="model">The model that will back this context.</param>
             <param name="contextOwnsConnection">
                 Constructs a new context instance using the existing connection to connect to a
-                database, and initializes it from the given model.  The connection will not be disposed when the context is
+                database, and initializes it from the given model. The connection will not be disposed when the context
+                is
                 disposed if contextOwnsConnection is false.
             </param>
         </member>
@@ -727,8 +744,8 @@
             <summary>
                 Constructs a new context instance using conventions to create the name of
                 the database to which a connection will be made, and initializes it from
-                the given model.  The by-convention name is the full name (namespace + class
-                name) of the derived context class.  See the class remarks for how this is
+                the given model. The by-convention name is the full name (namespace + class
+                name) of the derived context class. See the class remarks for how this is
                 used to create a connection.
             </summary>
             <param name="model">The model that will back this context.</param>
@@ -736,11 +753,12 @@
         <member name="M:Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext`1.#ctor(System.Data.Common.DbConnection,System.Boolean)">
             <summary>
                 Constructs a new context instance using the existing connection to connect
-                to a database.  The connection will not be disposed when the context is disposed
+                to a database. The connection will not be disposed when the context is disposed
                 if contextOwnsConnection is false.
             </summary>
             <param name="existingConnection">An existing connection to use for the new context.</param>
-            <param name="contextOwnsConnection">If set to true the connection is disposed when the context is disposed, otherwise
+            <param name="contextOwnsConnection">If set to true the connection is disposed when the context is disposed,
+                otherwise
                 the caller must dispose the connection.
             </param>
         </member>
@@ -748,7 +766,7 @@
             <summary>
                 Constructs a new context instance using the given string as the name or connection
                 string for the database to which a connection will be made, and initializes
-                it from the given model.  See the class remarks for how this is used to create
+                it from the given model. See the class remarks for how this is used to create
                 a connection.
             </summary>
             <param name="nameOrConnectionString">Either the database name or a connection string.</param>
@@ -756,103 +774,109 @@
         </member>
         <member name="T:Microsoft.AspNet.Identity.EntityFramework.IdentityResources">
             <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
+                A strongly-typed resource class, for looking up localized strings, etc.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.ResourceManager">
             <summary>
-              Returns the cached ResourceManager instance used by this class.
+                Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.Culture">
             <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
+                Overrides the current thread's CurrentUICulture property for all
+                resource lookups using this strongly typed resource class.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.DbValidationFailed">
             <summary>
-              Looks up a localized string similar to Database Validation failed..
+                Looks up a localized string similar to Database Validation failed..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.DuplicateEmail">
             <summary>
-              Looks up a localized string similar to Email {0} is already taken..
+                Looks up a localized string similar to Email {0} is already taken..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.DuplicateUserName">
             <summary>
-              Looks up a localized string similar to User name {0} is already taken..
+                Looks up a localized string similar to User name {0} is already taken..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.EntityFailedValidation">
             <summary>
-              Looks up a localized string similar to Entity Type {0} failed validation..
+                Looks up a localized string similar to Entity Type {0} failed validation..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.ExternalLoginExists">
             <summary>
-              Looks up a localized string similar to A user with that external login already exists..
+                Looks up a localized string similar to A user with that external login already exists..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.IdentityV1SchemaError">
             <summary>
-              Looks up a localized string similar to The model backing the &apos;ApplicationDbContext&apos; context has changed since the database was created. This could have happened because the model used by ASP.NET Identity Framework has changed or the model being used in your application has changed. To resolve this issue, you need to update your database. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=301867).  Before you update your database using Code First Migrations, please disable the schema consistency ch [rest of string was truncated]&quot;;.
+                Looks up a localized string similar to The model backing the &apos;ApplicationDbContext&apos; context
+                has changed since the database was created. This could have happened because the model used by ASP.NET
+                Identity Framework has changed or the model being used in your application has changed. To resolve this
+                issue, you need to update your database. Consider using Code First Migrations to update the database
+                (http://go.microsoft.com/fwlink/?LinkId=301867). Before you update your database using Code First
+                Migrations, please disable the schema consistency ch [rest of string was truncated]&quot;;.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.IncorrectType">
             <summary>
-              Looks up a localized string similar to Incorrect type, expected type of {0}..
+                Looks up a localized string similar to Incorrect type, expected type of {0}..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.PropertyCannotBeEmpty">
             <summary>
-              Looks up a localized string similar to {0} cannot be null or empty..
+                Looks up a localized string similar to {0} cannot be null or empty..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.RoleAlreadyExists">
             <summary>
-              Looks up a localized string similar to Role {0} already exists..
+                Looks up a localized string similar to Role {0} already exists..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.RoleIsNotEmpty">
             <summary>
-              Looks up a localized string similar to Role is not empty..
+                Looks up a localized string similar to Role is not empty..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.RoleNotFound">
             <summary>
-              Looks up a localized string similar to Role {0} does not exist..
+                Looks up a localized string similar to Role {0} does not exist..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.UserAlreadyInRole">
             <summary>
-              Looks up a localized string similar to User already in role..
+                Looks up a localized string similar to User already in role..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.UserIdNotFound">
             <summary>
-              Looks up a localized string similar to The UserId cannot be found..
+                Looks up a localized string similar to The UserId cannot be found..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.UserLoginAlreadyExists">
             <summary>
-              Looks up a localized string similar to UserLogin already exists for loginProvider: {0} with providerKey: {1}.
+                Looks up a localized string similar to UserLogin already exists for loginProvider: {0} with providerKey:
+                {1}.
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.UserNameNotFound">
             <summary>
-              Looks up a localized string similar to User {0} does not exist..
+                Looks up a localized string similar to User {0} does not exist..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.UserNotInRole">
             <summary>
-              Looks up a localized string similar to User is not in role..
+                Looks up a localized string similar to User is not in role..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityResources.ValueCannotBeNullOrEmpty">
             <summary>
-              Looks up a localized string similar to Value cannot be null or empty..
+                Looks up a localized string similar to Value cannot be null or empty..
             </summary>
         </member>
         <member name="T:Microsoft.AspNet.Identity.EntityFramework.IdentityRole">
@@ -934,7 +958,8 @@
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityUser`4.SecurityStamp">
             <summary>
-                A random value that should change whenever a users credentials have changed (password changed, login removed)
+                A random value that should change whenever a users credentials have changed (password changed, login
+                removed)
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.EntityFramework.IdentityUser`4.PhoneNumber">
