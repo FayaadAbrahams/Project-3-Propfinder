@@ -1,0 +1,182 @@
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: black;
+	margin-top: -40px;
+}
+.nav-links a {
+    color: black;
+}
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 2em;
+    font-size: 18px;
+    padding: 40px;
+}
+.menu li:hover {
+    background-color: lightgray;
+    border-radius: 40px;
+    transition: 0.4s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+.btn-select{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    text-align: center;
+    padding: 50px;
+    align-content: center;
+    margin: auto;
+   /* border: 1px solid lightgray;*/
+    border-radius: 5px;
+    width: 380px;
+    height: 230px;
+}
+
+/* ------------------------------------------------ */
+
+h1
+{
+    margin-left: 4%;
+    color:#000;
+}
+
+.home-wallpaper
+{
+    height: auto;
+    width: 110%;
+    margin-left: -5%;
+}
+
+.description-container
+{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 150%;
+    text-align: center;
+}
+
+.contact-container
+{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0px 200px;
+}
+
+.contact-one
+{
+    margin-left: -5%;
+}
+
+.contact-two
+{
+    margin-left: 14%;
+}
+
+.contact-container div
+{
+    width: 30%;
+    text-align: center;
+}
+
+.contact-container img
+{
+    height: auto;
+    width: 50%;
+    border-radius: 100px;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 250%;
+}
+
+.footer
+{
+    text-align: center;
+    font-size: 150%;
+}
+
+.slides
+{
+	width: 90%;
+    margin-left: 46px;
+}
+
+
+.slides img
+{
+	width: 50%
+	height: auto;
+	border-radius: 13px;
+}
+
+.slides h2
+{
+	float: right;
+	margin-top: 13%;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+.number
+{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
